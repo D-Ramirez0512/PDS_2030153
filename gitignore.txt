@@ -1,0 +1,2 @@
+Unidad_1/env/
+Unidad_1/src/__pycache__
