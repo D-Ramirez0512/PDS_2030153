@@ -1,12 +1,11 @@
 import sys
-from src.actividad_1 import seno_continuo, seno_discreto
+from src.actividad_1 import seno_continuo, seno, exponencial_escalon, triangular, cuadrada, graficar_ambas_senales, seno_continuo
 from src.actividad_2 import entender_frecuencia
 
 
 def main(opciones):
     if opciones[1] == "act_1":
         seno_continuo()
-        seno_discreto()
     elif opciones[1] == "act_2":
         if len(opciones) > 2:
             entender_frecuencia(opciones[2])
