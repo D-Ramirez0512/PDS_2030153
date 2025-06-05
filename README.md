@@ -1,2 +1,3 @@
-# PDS_2030153
-Repositorio de tareas Diego Ramirez Jasso 2030153
+# Repositorio de Diego (PDS)
+
+Correr main.py y escribir la acividad que se revisará
