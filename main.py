@@ -1,8 +1,14 @@
 import sys
+
+# Importar funciones de las actividades
 from src.u1act1 import signals1
 from src.u1act2 import signals2
 from src.u1act3 import signals3
 from src.u1act4 import dac_bits
+
+# Importar examen y nueva actividad
+from src.examenp1 import dft1
+from src.examenp2 import dft2  
 
 def main(options):
     if options[1] == "u1act1":
@@ -22,8 +28,12 @@ def main(options):
             dac_bits(options[2])
         else:
             print("Please give the number of bits. Example: python main.py u1act4 bits")
+    elif options[1] == "examen_p1":
+        dft1()
+    elif options[1] == "examen_p2":  
+        dft2()
     else:
-        print("Invalid option. Use 'u1act1', 'u1act2', 'u1act3', 'u1act4', etc.")
+        print("Invalid option. Use 'u1act1', 'u1act2', 'u1act3', 'u1act4', 'examen_p1', 'u1act5', etc.")
 
 if __name__ == '__main__':
     args = sys.argv
@@ -35,4 +45,5 @@ if __name__ == '__main__':
         print("Example (run unit 1 - activity 2 ): python main.py u1act2 2")
         print("Example (run unit 1 - activity 3 ): python main.py u1act3 1 2 0.7854")
         print("Example (run unit 1 - activity 4 ): python main.py u1act4 8")
-
+        print("Example (run examen_p1): python main.py examen_p1")
+        print("Example (run examen_p2): python main.py examen_p2")  # <-- Nueva instrucción
